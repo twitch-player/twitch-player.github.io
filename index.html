@@ -11,13 +11,13 @@
 				controls: false,     
 			};
 			var player = new Twitch.Player("livestream", options);
-			player.setVolume(0.1);
+			player.setVolume(1);
 		</script>
 	</div>
 	<button id=play onClick="toggle()">play</button>
 	<script>
 		function toggle() {
-			player.setVolume(1);
+			alert(player.isPaused());
 		}
 	</script>
 </body>
